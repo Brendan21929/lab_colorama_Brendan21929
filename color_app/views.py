@@ -17,7 +17,7 @@ def home_view(request):
     skyblue = Color(name="skyblue", red=135, green=206, blue=250)
 
     params = {
-        "name": "stranger",
+        "name": "Brendan",
         "color": skyblue,
     }
     
