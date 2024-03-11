@@ -4,6 +4,7 @@
 {% block head %}
   {{ block.super }}
   <title>COLORAMA</title>
+  
   <style>
     body {
       background-color: {{color.inverted.hex_code}};
@@ -21,6 +22,8 @@
 			<p>
 			  Do you like it? If not, 
 				<a href="{% url 'color_app:random_color' %}">choose another</a>.
+        <a href="{% url 'color_app:color_list' %}">
+          How about a new color?
 			</p>
       {% include "color_app/swatch.html" %}
       {% include "color_app/swatch.html" %}
